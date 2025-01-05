@@ -1,6 +1,10 @@
 import style from "../css/styles.module.css";
 
 export default function Navbar() {
+    const handleScroll = (id) => {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <nav className="bg-green-500 shadow-lg">
             <div className="container flex flex-col lg:flex-row
@@ -14,7 +18,8 @@ export default function Navbar() {
                         <a className="text-sm sm:text-base px-2 lg:px-5 
                                       py-2 transition rounded hover:text-white 
                                       hover:bg-emerald-600"
-                           href="#about">
+                           href="#about"
+                           onClick={() => handleScroll('about')}>
                         Sobre mim
                         </a>
                     </li>
@@ -22,7 +27,8 @@ export default function Navbar() {
                         <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
                                       transition rounded hover:text-white 
                                       hover:bg-emerald-600"
-                           href="#education">
+                           href="#education"
+                           onClick={() => handleScroll('education')}>
                         Educação
                         </a>
                     </li>
@@ -30,7 +36,8 @@ export default function Navbar() {
                         <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
                                       transition rounded hover:text-white 
                                       hover:bg-emerald-600"
-                           href="#projects">
+                           href="#projects"
+                           onClick={() => handleScroll('projects')}>
                         Projetos
                         </a>
                     </li>
@@ -38,7 +45,8 @@ export default function Navbar() {
                         <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
                                       transition rounded hover:text-white 
                                       hover:bg-emerald-600"
-                           href="#contact">
+                           href="#contact"
+                           onClick={() => handleScroll('contact')}>
                         Contato
                         </a>
                     </li>
