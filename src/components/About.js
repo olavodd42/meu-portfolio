@@ -23,24 +23,29 @@ export default function About() {
                     apaixonado e autodidata (o que é algo bastante
                     subjetivo, já que aprendi com professores no
                     YouTube, então isso realmente conta? Não sei).
-                    Tenho uma experiência de cerca de 2 anos e
-                    tenho um profundo entendimento de como criar
-                    produtos web.
+                    Tenho cerca de 2 anos de experiência em 
+                    transformar café e linhas de código em produtos
+                    web funcionais (ou quase sempre funcionais,
+                    depende do bug).
                 </p>
                 <p className="text-center text-lg text-gray-700 leading-relaxed">
-                    Sou estudante do 7<code>&deg;</code> semestre de
-                    Engenharia de Computação na Universidade Federal
-                    de Santa Maria (UFSM). Durante a minha jornada,
-                    tive a oportunidade de trabalhar em projetos
-                    incríveis, que me permitiram aprender muito e
-                    evoluir como desenvolvedor, principalmente na
-                    área de desenvolvimento full-stack.
+                Atualmente, sou estudante do 7º semestre de
+                Engenharia de Computação na Universidade Federal
+                de Santa Maria (UFSM). Minha jornada tem sido um 
+                misto de noites longas, aprendizado constante e 
+                aquela luta eterna para lembrar de colocar ponto 
+                e vírgula no final das linhas (quem nunca, né?).
                 </p>
                 <p className="text-center text-lg text-gray-700 leading-relaxed">
-                    Estou sempre em busca de novos desafios e
-                    oportunidades para aprender e crescer. Se você
-                    gostou do que viu até agora, entre em contato
-                    comigo para que possamos trabalhar juntos.
+                Trabalhar em projetos incríveis ao longo desse caminho me permitiu
+                evoluir como desenvolvedor, especialmente na área de desenvolvimento
+                full-stack. Estou sempre em busca de novos desafios, aprendizados e
+                memes relacionados à programação.
+                </p>
+                <p className="text-center text-lg text-gray-700 leading-relaxed">
+                Se você acha que posso ajudar no seu próximo projeto, me chama!
+                Prometo trazer muita dedicação, algumas piadas ruins e, com sorte,
+                uma solução para o seu problema.
                 </p>
             </div>
         </section>

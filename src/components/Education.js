@@ -5,7 +5,10 @@ const educationList = [
         institution: "Universidade Federal de Santa Maria (UFSM) - Santa Maria/RS",
         degree: "Bacharelado em Engenharia da Computação",
         period: "2021 - ... (em andamento, 7º semestre)",
-        description: "Faculdade que envolve a integração entre software e hardware, envolvendo disciplinas de programação, eletrônica, redes de computadores, sistemas embarcados, entre outras."
+        description: "Essa graduação é praticamente um\
+        buffet: tem de tudo! Programação, eletrônica,\
+        redes, sistemas embarcados... e umas matérias\
+        que fazem você questionar suas escolhas de vida."
     },
     {
         institution: "Colégio Scalabrini - Guaporé/RS",
