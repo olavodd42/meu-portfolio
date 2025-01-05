@@ -1,4 +1,6 @@
 // Hero.js
+import Image from "./programmer.png";
+
 export default function Hero() {
     return (
       <section
@@ -20,10 +22,10 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex-1">
-          <img src=
-  "https://media.geeksforgeeks.org/gfg-gg-logo.svg"
-               alt="Hello.svg"
-               className="w-full h-full bg-cover"/>
+        <img src={Image}
+       alt="Programmer"
+       className="w-full h-full bg-cover"/>
+               <a href="https://www.flaticon.com/free-icons/programmer" title="programmer icons">Programmer icons created by Flat Icons - Flaticon</a>
         </div>
       </section>
     );

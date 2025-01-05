@@ -1,11 +1,12 @@
+import style from "../css/styles.module.css";
+
 export default function Navbar() {
     return (
-        <nav className="w-full px-5 sm:px-10 py-5 shadow-xl 
-                        backdrop-blur-lg fixed top-0 z-10">
+        <nav className="bg-green-500">
             <div className="container flex flex-col lg:flex-row
                             gap-5 justify-between w-full 
                             items-center max-w-5xl mx-auto">
-                <h3 className="text-3xl text-emerald-500 font-bold">
+                <h3 className="text-3xl font-bold text-white p-5">
                     Olavo Defendi Dalberto
                 </h3>
                 <ul className="flex gap-3 align-center p-1 flex-wrap">

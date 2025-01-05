@@ -29,7 +29,7 @@ export default function Education() {
     ];
     //const skills = ["Python", "HTML", "CSS", "Javascript", "React", "SQL", "Git e Github", "Docker", "Linux", "Java", "C++", "C"];
     return (
-        <section id="Education"
+        <section id="education"
             className="px-10 w-full my-40 max-w-5xl mx-auto">
             <div className="education-section">
             <h2 className="text-4xl font-bold text-center mb-8">Formações Acadêmicas</h2>
