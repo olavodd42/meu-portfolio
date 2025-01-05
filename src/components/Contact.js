@@ -79,6 +79,20 @@ export default function Contact() {
                     Enviar
                 </button>
             </form>
+            <div className="flex justify-center gap-5 mt-10">
+                <a href="https://www.linkedin.com/in/olavo-defendi-dalberto-050144235" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                    LinkedIn
+                </a>
+                <a href="https://www.instagram.com/dalbertolavo" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                    Instagram
+                </a>
+                <a href="https://www.github.com/olavodd42" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                    Github
+                </a>
+                <a href="https://www.facebook.com/OlavoDDalberto" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                    Facebook
+                </a>
+            </div>
         </section>
     );
 }
