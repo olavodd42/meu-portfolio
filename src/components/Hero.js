@@ -23,19 +23,15 @@ export default function Hero() {
                 />
             </div>
             
-            {/* Botões de ação */}
-            <div className="absolute bottom-4 flex justify-between w-full px-4">
+            {/* Botão centralizado */}
+            <div className="absolute bottom-4 w-full flex justify-center">
                 <a
                     href="https://wa.me/+5555999684802"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-emerald-600 transition">
+                    className="bg-emerald-500 text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-emerald-600 transition">
                     Contate-me
                 </a>
-                <button
-                    className="bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-emerald-600 transition">
-                    Saiba mais
-                </button>
             </div>
         </section>
     );
