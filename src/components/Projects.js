@@ -2,6 +2,14 @@
 import Progress_bar from "./Progress_bar";
 
 export default function Projects() {
+    const styleBar = {
+        height: 30,
+        width: '100px',
+        backgroundColor: 'whitesmoke',
+        borderRadius: 40,
+        margin: 50
+    };
+
     return (
         <>
             <div className="flex flex-col justify-center items-center mt-4">
@@ -17,6 +25,7 @@ export default function Projects() {
                                     bgcolor="orange"
                                     progress="100"
                                     height={30}
+                                    style={styleBar}
                                 />
                             </div>
                         </div>
@@ -25,6 +34,9 @@ export default function Projects() {
                             <li>Programação Orientada a Objetos</li>
                             <li>JavaFX</li>
                         </ul>
+                        <a href="https://github.com/usuario/repositorio-academia" className="text-blue-500 underline mt-2">
+                            Ver repositório
+                        </a>
                     </div>
                     <div className="flex flex-col items-center mb-4">
                         <div className="flex items-center w-full">
@@ -34,6 +46,7 @@ export default function Projects() {
                                     bgcolor="red"
                                     progress="100"
                                     height={30}
+                                    style={styleBar}
                                 />
                             </div>
                         </div>
@@ -41,7 +54,11 @@ export default function Projects() {
                             <li>HTML/CSS</li>
                             <li>PHP</li>
                             <li>SQL</li>
+                            <li>Git/Github</li>
                         </ul>
+                        <a href="https://github.com/usuario/repositorio-biblioteca" className="text-blue-500 underline mt-2">
+                            Ver repositório
+                        </a>
                     </div>
                     <div className="flex flex-col items-center mb-4">
                         <div className="flex items-center w-full">
@@ -51,14 +68,18 @@ export default function Projects() {
                                     bgcolor="#99ff66"
                                     progress="95"
                                     height={30}
+                                    style={styleBar}
                                 />
                             </div>
                         </div>
                         <ul className="list-disc list-inside mt-2">
-                            <li>Competência 1</li>
-                            <li>Competência 2</li>
-                            <li>Competência 3</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>CSS</li>
                         </ul>
+                        <a href="https://github.com/usuario/repositorio-calculadora" className="text-blue-500 underline mt-2">
+                            Ver repositório
+                        </a>
                     </div>
                     <div className="flex flex-col items-center mb-4">
                         <div className="flex items-center w-full">
@@ -68,14 +89,18 @@ export default function Projects() {
                                     bgcolor="#ff00ff"
                                     progress="10"
                                     height={30}
+                                    style={styleBar}
                                 />
                             </div>
                         </div>
                         <ul className="list-disc list-inside mt-2">
-                            <li>Competência 1</li>
-                            <li>Competência 2</li>
-                            <li>Competência 3</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
+                        <a href="https://github.com/usuario/repositorio-portfolio" className="text-blue-500 underline mt-2">
+                            Ver repositório
+                        </a>
                     </div>
                 </div>
             </div>
