@@ -22,7 +22,7 @@ export default function Contact() {
         //const userId = 'YOUR_USER_ID'; // Opcional, se configurado na chave pública
 
         emailjs
-            .send(serviceId, templateId, formData, userId)
+            .send(serviceId, templateId, formData)
             .then((result) => {
                 console.log('Message sent:', result.text);
                 alert('Mensagem enviada com sucesso!');
