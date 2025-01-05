@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com'; // Certifique-se de instalar esta dependência
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -84,7 +86,7 @@ export default function Contact() {
                     LinkedIn
                 </a>
                 <a href="https://www.instagram.com/dalbertolavo" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
-                    Instagram
+                <FontAwesomeIcon icon={faInstagram} size="2x" color="#E1306C" /> @dalbertolavo
                 </a>
                 <a href="https://www.github.com/olavodd42" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
                     Github
