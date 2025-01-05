@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com'; // Certifique-se de instalar esta dependência
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -83,16 +86,16 @@ export default function Contact() {
             </form>
             <div className="flex justify-center gap-5 mt-10">
                 <a href="https://www.linkedin.com/in/olavo-defendi-dalberto-050144235" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
-                    LinkedIn
+                <FontAwesomeIcon icon={faLinkedin} size="2x" color="#E1306C" /> Olavo Defendi Dalberto
                 </a>
                 <a href="https://www.instagram.com/dalbertolavo" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
                 <FontAwesomeIcon icon={faInstagram} size="2x" color="#E1306C" /> @dalbertolavo
                 </a>
                 <a href="https://www.github.com/olavodd42" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
-                    Github
+                <FontAwesomeIcon icon={faGithub} size="2x" color="#E1306C" /> @olavodd42
                 </a>
                 <a href="https://www.facebook.com/OlavoDDalberto" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
-                    Facebook
+                <FontAwesomeIcon icon={faFacebook} size="2x" color="#E1306C" /> Olavo Dalberto
                 </a>
             </div>
         </section>
