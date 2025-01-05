@@ -19,10 +19,10 @@ export default function Contact() {
         // Substitua pelos seus valores do EmailJS
         const serviceId = 'service_yr8crtn';
         const templateId = 'template_vywvuak';
-        //const userId = 'YOUR_USER_ID'; // Opcional, se configurado na chave pública
+        const userId = 'AFKTUaXPgJ6P9p_Nv'; // Opcional, se configurado na chave pública
 
         emailjs
-            .send(serviceId, templateId, formData)
+            .send(serviceId, templateId, formData, userId)
             .then((result) => {
                 console.log('Message sent:', result.text);
                 alert('Mensagem enviada com sucesso!');
