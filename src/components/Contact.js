@@ -4,7 +4,7 @@ export default function Contact() {
         <section id="contact"
                  className="my-40 align-center max-w-5xl mx-auto p-3">
             <h2 className="text-5xl font-bold text-emerald-500 text-center">
-                Contact
+                Contato
             </h2>
             <div className="flex gap-5 justify-center 
                         my-10">
@@ -12,20 +12,40 @@ export default function Contact() {
                    target="_blank"
                    className="text-center hover:underline"
                    href=
-"https://instagram.com/geeks_for_geeks">
+                  "https://instagram.com/dalbertolavo">
                     Instagram:
                     <span className="font-bold">
-                        @geeks_for_geeks
+                        @dalbertolavo
                     </span>
                 </a>
                 <a rel="noreferrer"
                    target="_blank"
                    className="text-center hover:underline"
                    href=
-"https://twitter.com/geeksforgeeks">
-                    Twitter:
+                   "https://www.linkedin.com/in/olavo-defendi-dalberto-050144235">
+                    Linkedin:
                     <span className="font-bold">
-                        @geeksforgeeks
+                        Olavo Defendi Dalberto
+                    </span>
+                </a>
+                <a rel="noreferrer"
+                   target="_blank"
+                   className="text-center hover:underline"
+                   href=
+                   "https://github.com/olavodd42">
+                    Github:
+                    <span className="font-bold">
+                        @olavodd42
+                    </span>
+                </a>
+                <a rel="noreferrer"
+                   target="_blank"
+                   className="text-center hover:underline"
+                   href=
+                   "https://www.facebook.com/OlavoDDalberto/">
+                    Facebook:
+                    <span className="font-bold">
+                        Olavo Dalberto
                     </span>
                 </a>
             </div>

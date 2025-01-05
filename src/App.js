@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import Education from "./components/Education";
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
             <Navbar />
             <Hero />
             <About />
+            <Education />
             <Skills />
             <Projects />
             <Contact />

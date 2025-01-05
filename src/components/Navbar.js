@@ -21,6 +21,14 @@ export default function Navbar() {
                         <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
                                       transition rounded hover:text-white 
                                       hover:bg-emerald-600"
+                            href="#education">
+                            Formação
+                        </a>
+                    </li>
+                    <li>
+                        <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
+                                      transition rounded hover:text-white 
+                                      hover:bg-emerald-600"
                             href="#skills">
                             Competências
                         </a>
@@ -38,7 +46,7 @@ export default function Navbar() {
                                       transition rounded hover:text-white 
                                       hover:bg-emerald-600"
                             href="#contact">
-                            Contact
+                            Contato
                         </a>
                     </li>
                 </ul>

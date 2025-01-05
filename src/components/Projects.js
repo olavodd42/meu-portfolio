@@ -34,7 +34,7 @@ export default function Projects() {
                             <li>Programação Orientada a Objetos</li>
                             <li>JavaFX</li>
                         </ul>
-                        <a href="https://github.com/usuario/repositorio-academia" className="text-blue-500 underline mt-2">
+                        <a href="https://github.com/olavodd42/GymProject" className="text-blue-500 underline mt-2">
                             Ver repositório
                         </a>
                     </div>
@@ -56,7 +56,7 @@ export default function Projects() {
                             <li>SQL</li>
                             <li>Git/Github</li>
                         </ul>
-                        <a href="https://github.com/usuario/repositorio-biblioteca" className="text-blue-500 underline mt-2">
+                        <a href="https://github.com/FredericoSSicorra/grupoX-CDI-20242-tg2" className="text-blue-500 underline mt-2">
                             Ver repositório
                         </a>
                     </div>
@@ -77,7 +77,7 @@ export default function Projects() {
                             <li>React</li>
                             <li>CSS</li>
                         </ul>
-                        <a href="https://github.com/usuario/repositorio-calculadora" className="text-blue-500 underline mt-2">
+                        <a href="https://github.com/olavodd42/Calculadora-js" className="text-blue-500 underline mt-2">
                             Ver repositório
                         </a>
                     </div>
@@ -98,7 +98,7 @@ export default function Projects() {
                             <li>CSS</li>
                             <li>JavaScript</li>
                         </ul>
-                        <a href="https://github.com/usuario/repositorio-portfolio" className="text-blue-500 underline mt-2">
+                        <a href="https://github.com/olavodd42/meu-portfolio" className="text-blue-500 underline mt-2">
                             Ver repositório
                         </a>
                     </div>
