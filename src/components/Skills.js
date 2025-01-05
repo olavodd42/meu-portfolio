@@ -15,7 +15,8 @@ export default function Skills() {
                              className="cursor-pointer px-12 py-10 
                                         rounded bg-emerald-200 text-lg 
                                         flex items-center justify-center 
-                                        font-bold hover:shadow-xl">
+                                        font-bold hover:shadow-xl 
+                                        transition-transform transform hover:scale-105">
                             {skill}
                         </div>
                     )})}

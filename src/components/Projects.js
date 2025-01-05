@@ -1,109 +1,84 @@
-//import "./App.css"; // Descomente se necessário
+import React from 'react';
+import '../css/Projects.css';
 import Progress_bar from "./Progress_bar";
 
-export default function Projects() {
+const projects = [
+    {
+        title: "Sistema de Gerenciamento de Academia",
+        bgcolor: "red",
+        progress: "100",
+        technologies: ["HTML/CSS", "PHP", "SQL", "Git/Github"],
+        link: "https://github.com/olavodd42/GymProject"
+    },
+    {
+        title: "Sistema de Gerenciamento de Biblioteca",
+        bgcolor: "red",
+        progress: "100",
+        technologies: ["HTML/CSS", "PHP", "SQL", "Git/Github"],
+        link: "https://github.com/FredericoSSicorra/grupoX-CDI-20242-tg2"
+    },
+    {
+        title: "Calculadora Online",
+        bgcolor: "#99ff66",
+        progress: "95",
+        technologies: ["JavaScript", "React", "CSS"],
+        link: "https://github.com/olavodd42/Calculadora-js"
+    },
+    {
+        title: "Portfolio Web",
+        bgcolor: "#ff00ff",
+        progress: "10",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        link: "https://github.com/olavodd42/meu-portfolio"
+    }
+];
+
+const Projects = () => {
     const styleBar = {
         height: 30,
-        width: '100px',
+        width: '100%',  // Ajuste a largura para 100% para garantir que se ajuste ao contêiner pai
         backgroundColor: 'whitesmoke',
         borderRadius: 40,
-        margin: 50
+        margin: '10px 0',
+        boxSizing: 'border-box' // Garante que o padding e a borda sejam incluídos na largura
     };
 
     return (
-        <>
-            <div className="flex flex-col justify-center items-center mt-4">
-                <h2 className="text-5xl text-emerald-500 font-bold text-center">
-                    Meus Projetos
-                </h2>
-                <div className="progress-bars w-full max-w-lg">
-                    <div className="flex flex-col items-center mb-4">
-                        <div className="flex items-center w-full">
-                            <span className="w-1/3 text-right mr-4">Sistema de Gerenciamento de uma Academia</span>
+        <div className="flex flex-col justify-center items-center mt-16 px-4">
+            <h2 className="text-5xl text-emerald-500 font-bold text-center mb-8">
+                Meus Projetos
+            </h2>
+            <div className="progress-bars w-full max-w-3xl">
+                {projects.map((project, index) => (
+                    <div className="flex flex-col items-center mb-8 bg-gray-800 p-6 rounded-lg shadow-lg text-white" key={index}>
+                        <div className="flex items-center w-full mb-2">
+                            <span className="w-1/3 text-right mr-4 font-semibold text-lg">{project.title}</span>
                             <div className="w-2/3">
                                 <Progress_bar
-                                    bgcolor="orange"
-                                    progress="100"
+                                    bgcolor={project.bgcolor}
+                                    progress={project.progress}
                                     height={30}
-                                    style={styleBar}
                                 />
                             </div>
                         </div>
-                        <ul className="list-disc list-inside mt-2">
-                            <li>Java</li>
-                            <li>Programação Orientada a Objetos</li>
-                            <li>JavaFX</li>
+                        <ul className="list-disc list-inside text-left w-full text-gray-300">
+                            {project.technologies.map((tech, idx) => (
+                                <li key={idx}>{tech}</li>
+                            ))}
                         </ul>
-                        <a href="https://github.com/olavodd42/GymProject" className="text-blue-500 underline mt-2">
+                        <a 
+                            href={project.link} 
+                            className="text-emerald-400 underline mt-4 hover:text-emerald-300 transition duration-300"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
                             Ver repositório
                         </a>
                     </div>
-                    <div className="flex flex-col items-center mb-4">
-                        <div className="flex items-center w-full">
-                            <span className="w-1/3 text-right mr-4">Sistema de Gerenciamento de uma Biblioteca</span>
-                            <div className="w-2/3">
-                                <Progress_bar
-                                    bgcolor="red"
-                                    progress="100"
-                                    height={30}
-                                    style={styleBar}
-                                />
-                            </div>
-                        </div>
-                        <ul className="list-disc list-inside mt-2">
-                            <li>HTML/CSS</li>
-                            <li>PHP</li>
-                            <li>SQL</li>
-                            <li>Git/Github</li>
-                        </ul>
-                        <a href="https://github.com/FredericoSSicorra/grupoX-CDI-20242-tg2" className="text-blue-500 underline mt-2">
-                            Ver repositório
-                        </a>
-                    </div>
-                    <div className="flex flex-col items-center mb-4">
-                        <div className="flex items-center w-full">
-                            <span className="w-1/3 text-right mr-4">Calculadora Online</span>
-                            <div className="w-2/3">
-                                <Progress_bar
-                                    bgcolor="#99ff66"
-                                    progress="95"
-                                    height={30}
-                                    style={styleBar}
-                                />
-                            </div>
-                        </div>
-                        <ul className="list-disc list-inside mt-2">
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>CSS</li>
-                        </ul>
-                        <a href="https://github.com/olavodd42/Calculadora-js" className="text-blue-500 underline mt-2">
-                            Ver repositório
-                        </a>
-                    </div>
-                    <div className="flex flex-col items-center mb-4">
-                        <div className="flex items-center w-full">
-                            <span className="w-1/3 text-right mr-4">Portfolio Web</span>
-                            <div className="w-2/3">
-                                <Progress_bar
-                                    bgcolor="#ff00ff"
-                                    progress="10"
-                                    height={30}
-                                    style={styleBar}
-                                />
-                            </div>
-                        </div>
-                        <ul className="list-disc list-inside mt-2">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <a href="https://github.com/olavodd42/meu-portfolio" className="text-blue-500 underline mt-2">
-                            Ver repositório
-                        </a>
-                    </div>
-                </div>
+                ))}
             </div>
-        </>
+        </div>
     );
-}
+};
+
+export default Projects;

@@ -1,0 +1,15 @@
+.progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: red; /* Você pode ajustar a cor conforme necessário */
+    text-align: center;
+    line-height: 20px; /* Alinha o texto verticalmente */
+    color: white;
+    border-radius: 5px;
+}
