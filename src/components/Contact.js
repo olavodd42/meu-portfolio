@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; // Certifique-se de instalar esta dependência
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -14,17 +15,37 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aqui você pode adicionar a lógica para enviar o formulário, como uma chamada de API
-        console.log('Form data submitted:', formData);
+
+        // Substitua pelos seus valores do EmailJS
+        const serviceId = 'service_yr8crtn';
+        const templateId = 'template_vywvuak';
+        //const userId = 'YOUR_USER_ID'; // Opcional, se configurado na chave pública
+
+        emailjs
+            .send(serviceId, templateId, formData, userId)
+            .then((result) => {
+                console.log('Message sent:', result.text);
+                alert('Mensagem enviada com sucesso!');
+                setFormData({ name: '', email: '', message: '' }); // Reseta o formulário
+            })
+            .catch((error) => {
+                console.error('Error:', error.text);
+                alert('Erro ao enviar a mensagem. Tente novamente.');
+            });
     };
 
     return (
-        <section id="contact"
-                 className="my-40 align-center max-w-5xl mx-auto p-3">
+        <section
+            id="contact"
+            className="my-40 align-center max-w-5xl mx-auto p-3"
+        >
             <h2 className="text-5xl font-bold text-emerald-500 text-center">
                 Contato
             </h2>
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5 mt-10">
+            <form
+                onSubmit={handleSubmit}
+                className="flex flex-col gap-5 mt-10"
+            >
                 <input
                     type="text"
                     name="name"
