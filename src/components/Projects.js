@@ -40,7 +40,7 @@ const CustomNextArrow = (props) => {
     const { onClick } = props;
     return (
         <div
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-emerald-500 p-2 rounded-full cursor-pointer hover:bg-emerald-600 transition"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-indigo-500 p-2 rounded-full cursor-pointer hover:bg-indigo-600 transition"
             onClick={onClick}
         >
             <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@ const CustomPrevArrow = (props) => {
     const { onClick } = props;
     return (
         <div
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-emerald-500 p-2 rounded-full cursor-pointer hover:bg-emerald-600 transition"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-indigo-500 p-2 rounded-full cursor-pointer hover:bg-indigo-600 transition"
             onClick={onClick}
         >
             <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -80,13 +80,13 @@ const Projects = () => {
 
     return (
         <div className="flex flex-col justify-center items-center mt-16 px-4" id="projects">
-            <h2 className="text-5xl text-emerald-500 font-bold text-center mb-8">
+            <h2 className="text-5xl text-indigo-500 font-bold text-center mb-8">
                 Meus Projetos
             </h2>
             <div className="w-full max-w-3xl relative">
                 <Slider {...settings}>
                     {projects.map((project, index) => (
-                        <div className="flex flex-col items-center mb-8 bg-gray-800 p-6 rounded-lg shadow-lg text-white" key={index}>
+                        <div className="flex flex-col items-center mb-8 bg-gray-700 p-6 rounded-lg shadow-lg text-white" key={index}>
                             <div className="flex items-center w-full mb-2">
                                 <span className="w-1/3 text-right mr-4 font-semibold text-lg">{project.title}</span>
                                 <div className="w-2/3">
@@ -104,7 +104,7 @@ const Projects = () => {
                             </ul>
                             <a 
                                 href={project.link} 
-                                className="text-emerald-400 underline mt-4 hover:text-emerald-300 transition duration-300"
+                                className="text-indigo-400 underline mt-4 hover:text-indigo-300 transition duration-300"
                                 target="_blank" 
                                 rel="noopener noreferrer"
                             >

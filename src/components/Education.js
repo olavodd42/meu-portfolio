@@ -34,11 +34,11 @@ export default function Education() {
     return (
         <section id="education" className="px-10 w-full my-40 max-w-5xl mx-auto">
             <div className="education-section">
-                <h2 className="text-4xl font-bold text-center mb-8">Formações Acadêmicas</h2>
+                <h2 className="text-4xl font-bold text-center mb-8 text-indigo-400">Formações Acadêmicas</h2>
                 <div className="education-list">
                     {educationList.map((education, index) => (
-                        <div key={index} className="education-item mb-6 p-6 bg-white rounded-lg shadow-md">
-                            <h3 className="text-2xl font-semibold text-emerald-600">{education.institution}</h3>
+                        <div key={index} className="education-item mb-6 p-6 bg-indigo-100 rounded-lg shadow-md">
+                            <h3 className="text-2xl font-semibold text-indigo-600">{education.institution}</h3>
                             <p className="text-xl text-gray-800">{education.degree}</p>
                             <p className="text-md text-gray-600">{education.period}</p>
                             <p className="text-md text-gray-700">{education.description}</p>

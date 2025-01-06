@@ -6,7 +6,7 @@ export default function Hero() {
         <section className="relative flex flex-col items-center justify-center min-h-screen px-4">
             {/* Texto central */}
             <div className="text-center flex flex-col items-center justify-center space-y-4">
-                <h1 className="text-4xl sm:text-5xl font-bold text-emerald-500">
+                <h1 className="text-4xl sm:text-5xl font-bold text-indigo-500">
                     Olavo Defendi Dalberto
                 </h1>
                 <p className="text-lg sm:text-xl font-semibold text-gray-700">
@@ -29,7 +29,7 @@ export default function Hero() {
                     href="https://wa.me/+5555999684802"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-emerald-500 text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-emerald-600 transition">
+                    className="bg-indigo-500 text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-emerald-600 transition">
                     Contate-me
                 </a>
             </div>
