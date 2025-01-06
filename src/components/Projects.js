@@ -30,7 +30,7 @@ const projects = [
     {
         title: "Portfolio Web",
         bgcolor: "#ff00ff",
-        progress: "60",
+        progress: "100",
         technologies: ["React.JS", "HTML", "CSS (Tailwind CSS)", "JavaScript"],
         link: "https://github.com/olavodd42/meu-portfolio"
     }
