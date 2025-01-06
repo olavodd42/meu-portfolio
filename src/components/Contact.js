@@ -44,7 +44,7 @@ export default function Contact() {
             id="contact"
             className="my-40 align-center max-w-5xl mx-auto p-3"
         >
-            <h2 className="text-5xl font-bold text-emerald-500 text-center">
+            <h2 className="text-5xl font-bold text-indigo-500 text-center">
                 Contato
             </h2>
             <form
@@ -79,22 +79,22 @@ export default function Contact() {
                 />
                 <button
                     type="submit"
-                    className="p-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition duration-300"
+                    className="p-3 bg-indigo-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
                 >
                     Enviar
                 </button>
             </form>
             <div className="flex justify-center gap-5 mt-10">
-                <a href="https://www.linkedin.com/in/olavo-defendi-dalberto-050144235" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                <a href="https://www.linkedin.com/in/olavo-defendi-dalberto-050144235" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition duration-300">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" color="#E1306C" /> Olavo Defendi Dalberto
                 </a>
-                <a href="https://www.instagram.com/dalbertolavo" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                <a href="https://www.instagram.com/dalbertolavo" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition duration-300">
                 <FontAwesomeIcon icon={faInstagram} size="2x" color="#E1306C" /> @dalbertolavo
                 </a>
-                <a href="https://www.github.com/olavodd42" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                <a href="https://www.github.com/olavodd42" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition duration-300">
                 <FontAwesomeIcon icon={faGithub} size="2x" color="#E1306C" /> @olavodd42
                 </a>
-                <a href="https://www.facebook.com/OlavoDDalberto" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-600 transition duration-300">
+                <a href="https://www.facebook.com/OlavoDDalberto" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition duration-300">
                 <FontAwesomeIcon icon={faFacebook} size="2x" color="#E1306C" /> Olavo Dalberto
                 </a>
             </div>
