@@ -7,7 +7,7 @@ export default function About() {
             id="about"
             className="w-[30rem] h-[30rem] flex flex-col justify-center items-center 
                        bg-gradient-to-r from-indigo-200 to-indigo-800 
-                       mx-auto shadow-lg rounded-full p-10 overflow-hidden text-center">
+                       mx-auto shadow-lg rounded-full p-10 overflow-clip text-center">
             <div className="w-36 h-36 mb-6">
                 <img 
                     src={Image} 
