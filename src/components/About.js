@@ -7,11 +7,11 @@ export default function About() {
             id="about"
             className="px-10 w-full flex flex-col lg:flex-row py-20 
                        align-center bg-gradient-to-r from-indigo-200 to-indigo-800 
-                       max-w-5xl mx-auto shadow-lg rounded-lg overflow-hidden">
+                       max-w-5xl mx-auto shadow-lg rounded overflow-hidden">
             <div className="flex-1">
                 <img src={Image}
                     alt="About"
-                    className="w-full h-full object-cover rounded-lg shadow-md"/>
+                    className="w-full h-full object-cover rounded shadow-md"/>
             </div>
             <div className="flex-1 flex flex-col justify-center
                             items-center gap-5 px-6">
