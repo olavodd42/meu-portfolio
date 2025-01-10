@@ -33,6 +33,13 @@ const projects = [
         progress: "100",
         technologies: ["React.JS", "HTML", "CSS (Tailwind CSS)", "JavaScript"],
         link: "https://github.com/olavodd42/meu-portfolio"
+    },
+    {
+        title: "Seletores utilizando Cheerio",
+        bgcolor: "#ff00ff",
+        progress: "100",
+        technologies: ["Express.JS", "Node.JS", "Cheerio", "JavaScript"],
+        link: "https://github.com/olavodd42/meu-portfolio"
     }
 ];
 
