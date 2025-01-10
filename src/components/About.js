@@ -6,7 +6,8 @@ export default function About() {
         <section
             id="about"
             className="px-10 w-full flex flex-col lg:flex-row py-20 
-                       align-center bg-gradient-to-r from-indigo-200 to-indigo-800 max-w-5xl mx-auto shadow-lg rounded-lg">
+                       align-center bg-gradient-to-r from-indigo-200 to-indigo-800 
+                       max-w-5xl mx-auto shadow-lg rounded-lg overflow-hidden">
             <div className="flex-1">
                 <img src={Image}
                     alt="About"
