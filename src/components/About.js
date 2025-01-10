@@ -15,7 +15,7 @@ export default function About() {
                     className="w-full h-full object-cover rounded-full shadow-md"
                 />
             </div>
-            <div className="flex-1 flex flex-col justify-center gap-4">
+            <div className="flex-1 flex flex-col justify-center gap-4 text-center">
                 <h2 className="text-blue-800 text-3xl font-extrabold">
                     Sobre mim
                 </h2>
