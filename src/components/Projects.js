@@ -40,6 +40,13 @@ const projects = [
         progress: "100",
         technologies: ["Express.JS", "Node.JS", "Cheerio", "JavaScript"],
         link: "https://github.com/olavodd42/meu-portfolio"
+    },
+    {
+        title: "App To-Do List",
+        bgcolor: "#ff00ff",
+        progress: "100",
+        technologies: ["Express.JS", "Node.JS", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
+        link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
 ];
 
