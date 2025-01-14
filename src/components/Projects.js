@@ -14,7 +14,7 @@ const projects = [
         link: "https://github.com/olavodd42/GymProject"
     },
     {
-        title: "Sistema de Gerenciamento de Biblioteca",
+        title: "Sistema de Gerenciamento de Biblioteca*",
         bgcolor: "red",
         progress: "100",
         technologies: ["HTML/CSS", "PHP", "SQL", "Git/Github"],
@@ -44,7 +44,7 @@ const projects = [
     {
         title: "App To-Do List",
         bgcolor: "#ff00ff",
-        progress: "30",
+        progress: "70",
         technologies: ["Express.JS", "Node.JS", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
         link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
@@ -124,6 +124,7 @@ const Projects = () => {
                             >
                                 Ver repositório
                             </a>
+                            {project.title === "Sistema de Gerenciamento de Biblioteca*" && <span className='text-xs'>*Realizado em grupo</span>}
                         </div>
                     ))}
                 </Slider>
