@@ -42,9 +42,9 @@ const projects = [
         link: "https://github.com/olavodd42/meu-portfolio"
     },
     {
-        title: "App To-Do List",
+        title: "App To-Do List (CRUD App)",
         bgcolor: "#ff00ff",
-        progress: "80",
+        progress: "100",
         technologies: ["Express.JS", "Node.JS", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
         link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
