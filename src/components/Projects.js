@@ -44,7 +44,7 @@ const projects = [
     {
         title: "App To-Do List",
         bgcolor: "#ff00ff",
-        progress: "70",
+        progress: "80",
         technologies: ["Express.JS", "Node.JS", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
         link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
