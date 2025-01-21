@@ -105,7 +105,7 @@ Você nunca precisa usar `eject`. O conjunto de recursos agrupados é adequado p
 ## Contato
 
 Caso deseje entrar em contato, sinta-se à vontade para me enviar um e-mail ou acessar minhas redes sociais.
-[Linkedin](www.linkedin.com/in/olavo-defendi-dalberto-050144235)
-[Github](https://github.com/olavodd42/)
-[Instagram](https://www.instagram.com/dalbertolavo/)
-[E-mail](mailto:olavodalberto921@gmail.com)
+[Linkedin](www.linkedin.com/in/olavo-defendi-dalberto-050144235)<br>
+[Github](https://github.com/olavodd42/)<br>
+[Instagram](https://www.instagram.com/dalbertolavo/)<br>
+[E-mail: olavodalberto921@gmail.com](mailto:olavodalberto921@gmail.com)<br>
