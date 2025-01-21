@@ -42,12 +42,13 @@ const projects = [
         link: "https://github.com/olavodd42/meu-portfolio"
     },
     {
-        title: "App To-Do List (CRUD App)",
+        title: "App To-Do List (CRUD App, JWT Auth)",
         bgcolor: "#ff00ff",
         progress: "100",
-        technologies: ["Express.JS", "Node.JS", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
+        technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
         link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
+
 ];
 
 const CustomNextArrow = (props) => {
