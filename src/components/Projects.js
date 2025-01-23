@@ -22,8 +22,8 @@ const projects = [
     },
     {
         title: "Calculadora Online",
-        bgcolor: "#99ff66",
-        progress: "95",
+        bgcolor: "#ff00ff",
+        progress: "100",
         technologies: ["JavaScript", "HTML", "CSS"],
         link: "https://github.com/olavodd42/Calculadora-js"
     },
@@ -46,6 +46,13 @@ const projects = [
         bgcolor: "#ff00ff",
         progress: "100",
         technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
+        link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
+    },
+    {
+        title: "Plataforma de Comércio Eletrônico",
+        bgcolor: "#ff00ff",
+        progress: "30",
+        technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "Redis", "React.JS", "TypeScript", "Tailwind CSS", "PostgreSQL"],
         link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
 
