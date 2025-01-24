@@ -51,7 +51,7 @@ const projects = [
     {
         title: "Plataforma de Comércio Eletrônico",
         bgcolor: "#ff00ff",
-        progress: "30",
+        progress: "50",
         technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "Redis", "React.JS", "TypeScript", "Tailwind CSS", "PostgreSQL"],
         link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
