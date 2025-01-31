@@ -7,6 +7,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 const projects = [
     {
+        title: "Plataforma de Comércio Eletrônico",
+        bgcolor: "#ff00ff",
+        progress: "80",
+        technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "Redis", "React.JS", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+        link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
+    },
+    {
+        title: "App To-Do List (CRUD App, JWT Auth)",
+        bgcolor: "#ff00ff",
+        progress: "100",
+        technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
+        link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
+    },
+    {
         title: "Sistema de Gerenciamento de Academia",
         bgcolor: "red",
         progress: "100",
@@ -40,21 +54,8 @@ const projects = [
         progress: "100",
         technologies: ["Express.JS", "Node.JS", "Cheerio", "JavaScript"],
         link: "https://github.com/olavodd42/meu-portfolio"
-    },
-    {
-        title: "App To-Do List (CRUD App, JWT Auth)",
-        bgcolor: "#ff00ff",
-        progress: "100",
-        technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "React.JS", "JavaScript", "Tailwind CSS", "PostgreSQL"],
-        link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
-    },
-    {
-        title: "Plataforma de Comércio Eletrônico",
-        bgcolor: "#ff00ff",
-        progress: "50",
-        technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "Redis", "React.JS", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-        link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
     }
+    
 
 ];
 
