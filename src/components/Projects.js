@@ -11,7 +11,7 @@ const projects = [
         bgcolor: "#ff00ff",
         progress: "80",
         technologies: ["Express.JS", "Node.JS", "JWT Auth", "Sequelize", "Redis", "React.JS", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-        link: "https://github.com/olavodd42/sistema-gerenciamento-tarefas"
+        link: "https://github.com/olavodd42/ecommerce-site"
     },
     {
         title: "App To-Do List (CRUD App, JWT Auth)",
