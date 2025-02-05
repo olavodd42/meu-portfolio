@@ -87,7 +87,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative flex flex-col items-center py-16 bg-black text-white overflow-hidden">
+    <div id="projects" className="relative flex flex-col items-center py-16 bg-black text-white overflow-hidden">
       <div className="absolute inset-0 bg-green-500 opacity-20 blur-3xl"></div>
       <h2 className="text-5xl font-bold mb-12 relative text-green-300">Meus Projetos</h2>
       <div className="w-full max-w-3xl relative">

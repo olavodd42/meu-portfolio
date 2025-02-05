@@ -29,7 +29,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="bg-black text-white py-16 flex flex-col items-center">
+    <section id="contact" className="bg-black text-white py-16 flex flex-col items-center">
       <h2 className="text-5xl font-bold mb-12">Contato</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full max-w-lg">
         <input
