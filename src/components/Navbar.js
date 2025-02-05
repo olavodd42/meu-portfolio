@@ -1,55 +1,30 @@
-import style from "../css/styles.module.css";
+import { useState } from "react";
 
 export default function Navbar() {
+    const [active, setActive] = useState("home");
+
     const handleScroll = (id) => {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        setActive(id);
     };
 
     return (
-        <nav className="bg-indigo-500 shadow-lg">
-            <div className="container flex flex-col lg:flex-row
-                            gap-5 justify-between w-full 
-                            items-center max-w-5xl mx-auto p-4">
-                
-                <ul className="flex gap-3 align-center p-1 flex-wrap">
-                    <li>
-                        <a className="text-sm sm:text-base px-2 lg:px-5 
-                                      py-2 transition rounded hover:text-black 
-                                      hover:bg-blue-600"
-                           href="#about"
-                           onClick={() => handleScroll('about')}>
-                        Sobre mim
+        <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-black bg-opacity-90 px-10 py-3 rounded-full shadow-lg">
+            <ul className="flex space-x-8 text-white text-sm font-semibold tracking-wide">
+                {["home", "about", "education", "projects", "contact"].map((item) => (
+                    <li key={item} className="relative">
+                        <a
+                            href={`#${item}`}
+                            onClick={() => handleScroll(item)}
+                            className={`${
+                                active === item ? "text-teal-400" : "text-gray-400"
+                            } hover:text-teal-300 transition relative`}
+                        >
+                            {item.toUpperCase()}
                         </a>
                     </li>
-                    <li>
-                        <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
-                                      transition rounded hover:text-black 
-                                      hover:bg-blue-600"
-                           href="#education"
-                           onClick={() => handleScroll('education')}>
-                        Educação
-                        </a>
-                    </li>
-                    <li>
-                        <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
-                                      transition rounded hover:text-black 
-                                      hover:bg-blue-600"
-                           href="#projects"
-                           onClick={() => handleScroll('projects')}>
-                        Projetos
-                        </a>
-                    </li>
-                    <li>
-                        <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
-                                      transition rounded hover:text-black 
-                                      hover:bg-blue-600"
-                           href="#contact"
-                           onClick={() => handleScroll('contact')}>
-                        Contato
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                ))}
+            </ul>
         </nav>
     );
 }

@@ -1,27 +1,69 @@
-// Skills.js
+import { motion } from "framer-motion";
+
+const skills = [
+    { name: "Node.js", icon: "🟢" },
+    { name: "Express.js", icon: "🚀" },
+    { name: "TypeScript", icon: "🔷" },
+    { name: "JWT Auth", icon: "🔑" },
+    { name: "Redis", icon: "⚡" },
+    { name: "Python", icon: "🐍" },
+    { name: "HTML", icon: "📄" },
+    { name: "CSS", icon: "🎨" },
+    { name: "JavaScript", icon: "🟨" },
+    { name: "React", icon: "⚛️" },
+    { name: "SQL", icon: "💾" },
+    { name: "Git & GitHub", icon: "🐙" },
+    { name: "Docker", icon: "🐳" },
+    { name: "Linux", icon: "🐧" },
+    { name: "Java", icon: "☕" }
+  ];
+
 export default function Skills() {
-    const skills = ["Node.js", "Express.js", "TypeScript", "JWT Auth", "Redis", "Python", "HTML", "CSS", "Javascript", "React", "SQL", "Git e Github", "Docker", "Linux", "Java"];
-    return (
-        <section id="skills"
-            className="px-10 w-full my-40 max-w-5xl mx-auto">
-            <h2 className="text-center text-6xl text-indigo-500 font-bold">
-                Competências
-            </h2>
-            <div className="mt-10 flex gap-5 justify-center 
-                            flex-wrap mx-auto max-w-xl">
-                {skills.map((skill, index) => {
-                    return (
-                        <div key={index}
-                             className="cursor-pointer px-12 py-10 
-                                        rounded bg-indigo-300 text-lg 
-                                        flex items-center justify-center 
-                                        font-bold hover:shadow-xl 
-                                        transition-transform transform
-                                        hover:scale-105 text-indigo-800">
-                            {skill}
-                        </div>
-                    )})}
-            </div>
-        </section>
-    )
+  const orbitRadius = 150;
+  const animationDuration = 10; // Tempo para completar a órbita (em segundos)
+
+  return (
+    <section id="skills" className="relative flex justify-center items-center min-h-[500px] bg-black">
+      {/* Linhas Orbitais */}
+      <div className="absolute w-[400px] h-[400px] border border-gray-600 rounded-full"></div>
+      <div className="absolute w-[300px] h-[300px] border border-gray-700 rounded-full"></div>
+      <div className="absolute w-[200px] h-[200px] border border-gray-800 rounded-full"></div>
+
+      {/* Núcleo central */}
+      <div className="absolute w-20 h-20 flex items-center justify-center 
+                      bg-green-500/20 border-2 border-green-400/50 rounded-full 
+                      shadow-[0_0_40px_#00ff00] animate-pulse text-white text-lg font-bold">
+        Núcleo
+      </div>
+
+      {/* Habilidades em órbita */}
+      {skills.map((skill, index) => {
+        const angle = (index / skills.length) * Math.PI * 2; // Distribui as skills uniformemente
+        const x = Math.cos(angle) * orbitRadius;
+        const y = Math.sin(angle) * orbitRadius;
+
+        return (
+          <motion.div
+            key={skill.name}
+            className="absolute flex items-center gap-2 px-4 py-2 text-white font-semibold shadow-lg rounded-full 
+                       bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 backdrop-blur-md"
+            initial={{ x, y }}
+            animate={{
+              rotate: [0, 360], // Rotação contínua
+              x: [x, -x, x], // Movimento circular
+              y: [y, -y, y]
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: animationDuration,
+              ease: "linear"
+            }}
+          >
+            <span>{skill.icon}</span>
+            {skill.name}
+          </motion.div>
+        );
+      })}
+    </section>
+  );
 }

@@ -5,10 +5,7 @@ const educationList = [
         institution: "Universidade Federal de Santa Maria (UFSM) - Santa Maria/RS",
         degree: "Bacharelado em Engenharia da Computação",
         period: "2021 - ... (em andamento, 7º semestre)",
-        description: "Essa graduação é praticamente um\
-        buffet: tem de tudo! Programação, eletrônica,\
-        redes, sistemas embarcados... e umas matérias\
-        que fazem você questionar suas escolhas de vida."
+        description: "Essa graduação é praticamente um buffet: tem de tudo! Programação, eletrônica, redes, sistemas embarcados... e umas matérias que fazem você questionar suas escolhas de vida."
     },
     {
         institution: "Colégio Scalabrini - Guaporé/RS",
@@ -32,16 +29,21 @@ const educationList = [
 
 export default function Education() {
     return (
-        <section id="education" className="px-10 w-full my-40 max-w-5xl mx-auto">
-            <div className="education-section">
+        <section id="education" className="bg-black text-white py-16 px-6">
+            <div className="max-w-3xl mx-auto">
                 <h2 className="text-4xl font-bold text-center mb-8 text-indigo-400">Formações Acadêmicas</h2>
-                <div className="education-list">
+                <div className="space-y-8">
                     {educationList.map((education, index) => (
-                        <div key={index} className="education-item mb-6 p-6 bg-indigo-100 rounded-lg shadow-md">
-                            <h3 className="text-2xl font-semibold text-indigo-600">{education.institution}</h3>
-                            <p className="text-xl text-gray-800">{education.degree}</p>
-                            <p className="text-md text-gray-600">{education.period}</p>
-                            <p className="text-md text-gray-700">{education.description}</p>
+                        <div key={index} className="border-b border-gray-700 pb-4">
+                            <div className="flex gap-4 items-start">
+                                <div className="w-8 h-8 flex items-center justify-center bg-gray-700 rounded">{index + 1}</div>
+                                <div>
+                                    <h3 className="text-2xl font-semibold text-indigo-400">{education.institution}</h3>
+                                    <p className="text-xl text-gray-300">{education.degree}</p>
+                                    <p className="text-md text-gray-500">{education.period}</p>
+                                    <p className="text-md text-gray-400">{education.description}</p>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
