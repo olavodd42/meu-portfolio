@@ -4,21 +4,23 @@ import Icon from './icon.png';
 
 export default function Hero() {
     return (
-        <section id="home" className="relative min-h-screen flex items-center justify-end bg-gradient-to-r from-gray-900 to-gray-700 px-10">
-            {/* Ícone Rotativo */}
-            
-            {/* Imagem do lado esquerdo com efeito escuro */}
-            <div className="absolute left-0 top-0 w-1/2 h-full">
+        <section 
+            id="home" 
+            className="relative w-screen h-screen flex items-center justify-end bg-gradient-to-r from-gray-900 to-gray-700 px-10"
+        >
+            {/* Imagem de fundo cobrindo toda a tela */}
+            <div className="absolute inset-0">
                 <img
                     src={Image}
                     alt="Programmer"
-                    className="h-full w-full object-cover mix-blend-luminosity opacity-20"
+                    className="w-full h-full object-cover mix-blend-luminosity opacity-20"
                 />
             </div>
 
             {/* Conteúdo de texto alinhado à direita */}
             <div className="relative z-10 w-1/2 text-right text-white opacity-70">
 
+                {/* Ícone Rotativo */}
                 <div className="absolute right-10 top-[100%] w-32 h-32">
                     <img
                         src={Icon}
@@ -29,10 +31,10 @@ export default function Hero() {
                 
                 <p className="text-sm text-teal-400 uppercase tracking-wide">Full-stack Dev</p>
                 <h1 className="text-6xl font-bold leading-tight">
-                Olavo Defendi Dalberto <br /> 
+                    Olavo Defendi Dalberto <br /> 
                 </h1>
                 <p className="mt-4 text-lg text-gray-300">
-                 Entusiasta de café e bugs inexplicáveis.
+                    Entusiasta de café e bugs inexplicáveis.
                 </p>
 
                 {/* Botão do WhatsApp */}
@@ -50,4 +52,3 @@ export default function Hero() {
         </section>
     );
 }
-

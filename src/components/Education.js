@@ -29,19 +29,36 @@ const educationList = [
 
 export default function Education() {
     return (
-        <section id="education" className="bg-black text-white py-16 px-6">
+        <section 
+            id="education" 
+            className="bg-black text-white min-h-screen flex flex-col justify-center px-6 py-16"
+        >
             <div className="max-w-3xl mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-8 text-indigo-400">Formações Acadêmicas</h2>
-                <div className="space-y-8">
+                <h2 className="text-4xl font-bold text-center mb-8 text-white">
+                    Formações Acadêmicas
+                </h2>
+                <div className="space-y-10">
                     {educationList.map((education, index) => (
-                        <div key={index} className="border-b border-gray-700 pb-4">
+                        <div key={index} className="border-b border-gray-700 pb-6">
                             <div className="flex gap-4 items-start">
-                                <div className="w-8 h-8 flex items-center justify-center bg-gray-700 rounded">{index + 1}</div>
+                                <div className="w-10 h-10 flex items-center justify-center bg-indigo-500 text-black font-bold rounded-full text-lg">
+                                    {index + 1}
+                                </div>
                                 <div>
-                                    <h3 className="text-2xl font-semibold text-indigo-400">{education.institution}</h3>
-                                    <p className="text-xl text-gray-300">{education.degree}</p>
-                                    <p className="text-md text-gray-500">{education.period}</p>
-                                    <p className="text-md text-gray-400">{education.description}</p>
+                                    <h3 className="text-2xl font-semibold text-indigo-300">
+                                        {education.institution}
+                                    </h3>
+                                    <p className="text-lg text-gray-200">
+                                        {education.degree}
+                                    </p>
+                                    <p className="text-md text-gray-400">
+                                        {education.period}
+                                    </p>
+                                    {education.description && (
+                                        <p className="text-md text-gray-500 mt-2">
+                                            {education.description}
+                                        </p>
+                                    )}
                                 </div>
                             </div>
                         </div>

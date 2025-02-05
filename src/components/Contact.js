@@ -62,8 +62,8 @@ export default function Contact() {
           Enviar
         </button>
       </form>
-      
-      <div className="flex justify-center gap-6 mt-12 w-full max-w-4xl border-t border-gray-800 pt-8">
+
+      <div className="flex flex-wrap justify-center gap-6 mt-12 w-full max-w-4xl border-t border-gray-800 pt-8">
         {[{ icon: faInstagram, name: "INSTAGRAM", link: "https://www.instagram.com/dalbertolavo" },
           { icon: faLinkedin, name: "LINKEDIN", link: "https://www.linkedin.com/in/olavo-defendi-dalberto-050144235" },
           { icon: faGithub, name: "GITHUB", link: "https://www.github.com/olavodd42" },
@@ -74,7 +74,7 @@ export default function Contact() {
           </a>
         ))}
       </div>
-      
+
       <div className="mt-8 text-gray-500 text-sm text-center">
         <p>olavodalberto921@gmail.com</p>
         <p>Olavo Dalberto © All Rights Reserved</p>

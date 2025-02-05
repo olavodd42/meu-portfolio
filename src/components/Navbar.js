@@ -9,8 +9,8 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-black bg-opacity-90 px-10 py-3 rounded-full shadow-lg">
-            <ul className="flex space-x-8 text-white text-sm font-semibold tracking-wide">
+        <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-black bg-opacity-90 px-6 py-3 rounded-full shadow-lg w-[95%] max-w-md md:px-10 lg:w-[80%] xl:max-w-lg">
+            <ul className="flex sm:flex-wrap md:flex-nowrap justify-around md:justify-center space-x-4 md:space-x-8 text-white text-sm font-semibold tracking-wide">
                 {["home", "about", "education", "projects", "contact"].map((item) => (
                     <li key={item} className="relative">
                         <a
