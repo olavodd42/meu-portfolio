@@ -33,7 +33,7 @@ export default function Skills() {
       <div className="absolute w-20 h-20 flex items-center justify-center 
                       bg-green-500/20 border-2 border-green-400/50 rounded-full 
                       shadow-[0_0_40px_#00ff00] animate-pulse text-white text-lg font-bold">
-        Núcleo
+        Competências
       </div>
 
       {/* Habilidades em órbita */}
