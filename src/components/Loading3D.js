@@ -45,35 +45,6 @@ function Orbit({ radius = 1.2, tube = 0.02, speed = 0.005 }) {
   );
 }
 
-function LoadingText() {
-  const ref = useRef();
-  // Efeito de pulsação usando uma função seno para variar o scale
-  useFrame((state) => {
-    if (ref.current) {
-      const scale = 1 + Math.sin(state.clock.elapsedTime * 2) * 0.2;
-      ref.current.scale.set(scale, scale, scale);
-    }
-  });
-  return (
-    <Text3D
-      ref={ref}
-      font={robotoFont}
-      position={[-1.5, -2, 0]}    // Ajuste a posição conforme desejado
-      size={0.5}
-      height={0.1}
-      curveSegments={12}
-      bevelEnabled
-      bevelThickness={0.02}
-      bevelSize={0.02}
-      bevelOffset={0}
-      bevelSegments={5}
-    >
-      Loading...
-      <meshStandardMaterial attach="material" color="blue" />
-    </Text3D>
-  );
-}
-
 export default function Loading3D() {
   return (
     <Canvas
@@ -89,8 +60,6 @@ export default function Loading3D() {
       <Orbit radius={1.4} tube={0.02} speed={0.007} />
       <Orbit radius={1.6} tube={0.02} speed={0.009} />
 
-      {/* Texto 3D com efeito de pulsação */}
-      <LoadingText />
       <OrbitControls />
     </Canvas>
   );
