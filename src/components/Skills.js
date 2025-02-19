@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const skills = [
-    { name: "Node.js", icon: "🟢" },
-    { name: "Express.js", icon: "🚀" },
-    { name: "TypeScript", icon: "🔷" },
-    { name: "JWT Auth", icon: "🔑" },
-    { name: "Redis", icon: "⚡" },
     { name: "Python", icon: "🐍" },
+    { name: "Pandas", icon: "🐼" },
+    { name: "Scikit-learn", icon: "🔥" },
+    { name: "Pytorch", icon: "🤖" },
+    { name: "Node.js", icon: "🟢" },
+    { name: "TypeScript", icon: "🔷" },
     { name: "HTML", icon: "📄" },
     { name: "CSS", icon: "🎨" },
     { name: "JavaScript", icon: "🟨" },

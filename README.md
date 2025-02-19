@@ -27,7 +27,7 @@ Ele agrupa corretamente o React no modo de produção e otimiza a compilação p
 A compilação é minificada e os nomes dos arquivos incluem os hashes.  
 Seu aplicativo está pronto para ser implantado!
 
-Veja a seção sobre [implantção](https://facebook.github.io/create-react-app/docs/deployment) para mais informações.
+Veja a seção sobre [implantação](https://facebook.github.io/create-react-app/docs/deployment) para mais informações.
 
 ### `npm run eject`
 
@@ -72,12 +72,11 @@ Você nunca precisa usar `eject`. O conjunto de recursos agrupados é adequado p
 │   │   ├── Education.js
 │   │   ├── Footer.js
 │   │   ├── Hero.js
+│   │   ├── Loading3D.js
 │   │   ├── Navbar.js
-│   │   ├── Progress_bar.js
 │   │   ├── Projects.js
 │   │   └── Skills.js
 │   ├── css/
-│   │   ├── Projects.css
 │   │   ├── style.css
 │   │   └── styles.module.css
 │   ├── index.css
@@ -94,6 +93,8 @@ Você nunca precisa usar `eject`. O conjunto de recursos agrupados é adequado p
 - **EmailJS**
 - **FontAwesome**
 - **Slick Carousel**
+- **Frame Motion**
+- **Three.js**
 
 ## Funcionalidades
 
@@ -101,6 +102,7 @@ Você nunca precisa usar `eject`. O conjunto de recursos agrupados é adequado p
 - Exibição de projetos com barra de progresso
 - Formulário de contato com integração ao EmailJS
 - Navegação suave entre seções
+- Animação de carregamento 3D
 
 ## Contato
 

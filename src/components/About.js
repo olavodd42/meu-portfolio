@@ -10,26 +10,25 @@ export default function About() {
                     <div className="flex gap-4 items-start border-b border-gray-700 pb-4">
                         <div className="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-lg font-bold">1</div>
                         <p className="text-lg text-justify">
-                            Olá, eu sou Olavo Dalberto, um desenvolvedor apaixonado e autodidata.
-                            Tenho cerca de 2 anos de experiência em transformar café e linhas de 
-                            código em produtos web funcionais.
+                        Sou Olavo Defendi Dalberto, estudante de Engenharia da Computação na Universidade Federal de Santa Maria (UFSM),
+                        com previsão de conclusão em 2026. Tenho experiência em análise de dados e desenvolvimento, 
+                        utilizando tecnologias como React, Node.js e PostgreSQL.
                         </p>
                     </div>
                     
                     <div className="flex gap-4 items-start border-b border-gray-700 pb-4">
                         <div className="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-lg font-bold">2</div>
                         <p className="text-lg text-justify">
-                            Atualmente, sou estudante do 7º semestre de Engenharia de Computação
-                            na <em>Universidade Federal de Santa Maria (UFSM)</em>. Minha jornada é um misto de aprendizado constante e uma luta
-                            eterna com ponto e vírgula.
+                        Tenho forte interesse pela área de dados e machine learning, com certificações da DeepLearning.AI e Stanford Online.
+                        Além disso, possuo conhecimentos sólidos em desenvolvimento web e mobile, administração de sistemas Linux/Windows e
+                        práticas DevOps com Docker e CI/CD.
                         </p>
                     </div>
                     
                     <div className="flex gap-4 items-start">
                         <div className="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-lg font-bold">3</div>
                         <p className="text-lg text-justify">
-                            Se você acha que posso ajudar no seu próximo projeto, me chama!
-                            Prometo dedicação, piadas ruins e uma solução para o seu problema.
+                        Busco constantemente aprimorar minhas habilidades e contribuir para soluções tecnológicas inovadoras.
                         </p>
                     </div>
                 </div>

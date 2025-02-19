@@ -34,7 +34,7 @@ export default function Hero() {
                     Olavo Defendi Dalberto <br /> 
                 </h1>
                 <p className="mt-4 text-lg text-gray-300">
-                    Entusiasta de café e bugs inexplicáveis.
+                    Cientista de dados
                 </p>
 
                 {/* Botão do WhatsApp */}

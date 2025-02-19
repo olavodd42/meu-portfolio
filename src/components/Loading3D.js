@@ -1,7 +1,7 @@
 // src/components/Loading3D.js
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Text3D, OrbitControls } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import robotoFont from 'three/examples/fonts/helvetiker_regular.typeface.json';
 
 function Sphere() {
@@ -27,7 +27,7 @@ function Sphere() {
   );
 }
 
-function Orbit({ radius = 1.2, tube = 0.02, speed = 0.005 }) {
+function Orbit({ radius = 1.2, tube = 0.02, speed = 0.005, color = 'white', opacity = 0.6 }) {
   const ref = useRef();
   // Gira a órbita ao longo do tempo
   useFrame(() => {
@@ -40,7 +40,7 @@ function Orbit({ radius = 1.2, tube = 0.02, speed = 0.005 }) {
     <mesh ref={ref}>
       {/* Usamos torusGeometry para criar uma "cintura" em volta da esfera */}
       <torusGeometry args={[radius, tube, 16, 100]} />
-      <meshBasicMaterial color="white" transparent opacity={0.6} />
+      <meshBasicMaterial color={color} transparent opacity={opacity} />
     </mesh>
   );
 }
@@ -56,9 +56,9 @@ export default function Loading3D() {
       <directionalLight position={[3, 3, 3]} intensity={1} />
       
       <Sphere />
-      <Orbit radius={1.2} tube={0.02} speed={0.005} />
-      <Orbit radius={1.4} tube={0.02} speed={0.007} />
-      <Orbit radius={1.6} tube={0.02} speed={0.009} />
+      <Orbit radius={1.2} tube={0.02} speed={0.005} color="white" opacity={0.6} />
+      <Orbit radius={1.4} tube={0.02} speed={0.007} color="cyan" opacity={0.5} />
+      <Orbit radius={1.6} tube={0.02} speed={0.009} color="magenta" opacity={0.4} />
 
       <OrbitControls />
     </Canvas>
