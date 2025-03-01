@@ -25,20 +25,10 @@ const projects = [
     link: "https://github.com/FredericoSSicorra/grupoX-CDI-20242-tg2"
   },
   {
-    title: "Calculadora Online",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    link: "https://github.com/olavodd42/Calculadora-js"
-  },
-  {
     title: "Portfolio Web",
     technologies: ["React.JS", "HTML", "CSS (Tailwind CSS)", "JavaScript"],
     link: "https://github.com/olavodd42/meu-portfolio"
   },
-  {
-    title: "Seletores utilizando Cheerio",
-    technologies: ["Express.JS", "Node.JS", "Cheerio", "JavaScript"],
-    link: "https://github.com/olavodd42/meu-portfolio"
-  }
 ];
 
 const ProjectCard = ({ project, index }) => {
